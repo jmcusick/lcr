@@ -1,0 +1,6 @@
+set title "Money Distribution of Each Player in LCR Per Turn"
+set dgrid3d 30,30
+set xlabel "Player"
+set ylabel "Turn"
+set zlabel "Ave $"
+splot "distr.txt" using 1:2:3 with lines lc rgb "blue" title "$ Distribution"

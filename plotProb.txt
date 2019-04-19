@@ -1,0 +1,5 @@
+set title "Number of LCR Wins in Each Seat"
+set xlabel "Player"
+set ylabel "Probability of Winning"
+set yrange [0:1]
+plot "prob.txt" using 1:2:(sprintf("%1.2f", $2)):xtic(1) with labels point  pt 7 offset char 1,1 notitle
